@@ -1,0 +1,316 @@
+// 加自己的全局样式，class起名要特殊（如加前缀）,class命名规范: a, a-b, a_b, a-b_c
+$main-padding: 25rpx;
+
+body {
+  background-color: #f8f8f8;
+  font-size: 28upx;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB',
+    'Microsoft Yahei', sans-serif;
+}
+image {
+  display: block;
+}
+
+.uni-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.uni-flex-ellipsis {
+  flex: 1;
+  width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.uni-ellipsis-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.uni-ellipsis-4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.uni-ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.uni-ellipsis-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.wordWrap {
+  word-wrap: break-word !important;
+}
+.u-p-20 {
+  padding: 20rpx;
+}
+.u-p-30 {
+  padding: 30rpx;
+}
+.u-p-40 {
+  padding: 40rpx;
+}
+.u-pl-10 {
+  padding-left: 10rpx;
+}
+.u-pl-20 {
+  padding-left: 20rpx;
+}
+.u-pl-30 {
+  padding-left: 30rpx;
+}
+.u-pb-30 {
+  padding-bottom: 30rpx;
+}
+.u-pr-10 {
+  padding-right: 10rpx;
+}
+.u-pr-20 {
+  padding-right: 20rpx;
+}
+.u-mb-10 {
+  margin-bottom: 10rpx;
+}
+.u-mb-20 {
+  margin-bottom: 20rpx;
+}
+.u-mb-30 {
+  margin-bottom: 30rpx;
+}
+.u-mr-10 {
+  margin-right: 10rpx;
+}
+.u-mr-20 {
+  margin-right: 20rpx;
+}
+.u-mr-30 {
+  margin-right: 30rpx;
+}
+.u-ml-20 {
+  margin-left: 20rpx;
+}
+.u-ml-30 {
+  margin-left: 20rpx;
+}
+.u-mt-20 {
+  margin-top: 20rpx;
+}
+.u-mt-30 {
+  margin-top: 30rpx;
+}
+.u-mt-50 {
+  margin-top: 50rpx;
+}
+
+.noData {
+  color: #909399;
+  line-height: 60rpx;
+}
+image {
+  width: 100%;
+  height: 100%;
+}
+.g-flexs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.g-flexs-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.g-flex-left {
+  display: flex;
+  align-items: center;
+}
+.g-flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.g-20 {
+  width: 20%;
+}
+.g-30 {
+  width: 30%;
+}
+.g-40 {
+  width: 40%;
+}
+.g-50 {
+  width: 50%;
+}
+.g-60 {
+  width: 60%;
+}
+.g-70 {
+  width: 70%;
+}
+.g-80 {
+  width: 80%;
+}
+
+.noData {
+  color: #909399;
+  line-height: 60rpx;
+}
+image {
+  width: 100%;
+  height: 100%;
+}
+.g-flexs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.g-flex-left {
+  display: flex;
+  align-items: center;
+}
+.g-flexs-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.g-20 {
+  width: 20%;
+}
+.g-30 {
+  width: 30%;
+}
+.g-40 {
+  width: 40%;
+}
+.g-50 {
+  width: 50%;
+}
+.g-60 {
+  width: 60%;
+}
+.g-70 {
+  width: 70%;
+}
+.g-80 {
+  width: 80%;
+}
+
+.g-avatar {
+  width: 20%;
+}
+.u-subtitle {
+  color: #000;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.g-subtitle {
+  color: #000;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 12rpx;
+}
+.g-subtitles {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 12rpx;
+}
+
+.g-weight {
+  font-weight: 700;
+}
+.border-r {
+  border-right: 1px solid #7d808a;
+}
+.font-24 {
+  font-size: 24rpx;
+}
+.font-50 {
+  font-size: 50rpx;
+}
+.g-cont {
+  font-size: 28rpx !important ;
+}
+
+.g-title {
+  text-align: left;
+  color: #42424f;
+}
+.color-white {
+  color: #fff;
+}
+.color-grid {
+  color: #7d808a;
+}
+.color-title {
+  color: #131415;
+  font-size: 36rpx;
+}
+.color-num {
+  font-size: 50rpx;
+  color: #4170fb;
+}
+.color-detail {
+  color: #4170fb;
+}
+.color-icon {
+  color: #7d808a;
+  font-size: 24rpx;
+}
+.color-info {
+  color: #f76603;
+}
+
+.alige_c {
+  text-align: center;
+}
+.alige_l {
+  text-align: left;
+}
+.alige_r {
+  text-align: right;
+}
+
+.touch-tap {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(2);
+  }
+}
+.safe-box {
+  padding: $main-padding;
+  padding-bottom: calc(env(safe-area-inset-bottom) + $main-padding) !important;
+}
+.sticky {
+  position: fixed;
+  left: $main-padding;
+  right: $main-padding;
+  bottom: calc(env(safe-area-inset-bottom) + $main-padding);
+}
+
+// 加自己的全局样式，class起名要特殊（如加前缀）,class命名规范: a, a-b, a_b, a-b_c

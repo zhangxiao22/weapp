@@ -1,49 +1,67 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+  <view class="container">
+    <Form ref="form">
+      <FInput v-model="form.aa"
+              label="aaaa"
+              required
+              :readonly="readonly" />
+      <FInput v-model="form.b"
+              label="bbb"
+              required
+              :readonly="readonly" />
+      <FInput v-model="form.c"
+              label="ccc"
+              required
+              :readonly="readonly" />
+      <FInput v-model="form.dd"
+              label="dddd"
+              required
+              :readonly="readonly" />
+      <FInput v-model="form.e"
+              label="eeee"
+              required
+              :readonly="readonly" />
+      <Upload label="上传图片"
+              required
+              :border="false" />
+    </Form>
+    <StickBottom>
+      <van-button type="info"
+                  block
+                  @click="submit">默认按钮</van-button>
+    </StickBottom>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+export default {
+  data() {
+    return {
+      form: {},
+      readonly: false
 
-		},
-		methods: {
+    }
+  },
+  onLoad() {
 
-		}
-	}
+  },
+  methods: {
+    afterRead({ detail }) {
+      const { file } = detail
+      console.log(file)
+    },
+    submit() {
+      const validate = this.$refs.form.validate()
+      console.log('validate......', validate)
+    }
+  }
+}
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+<style lang="scss" scoped>
+.container {
+  // background: #fff;
+  // height: 200vh;
+  // border: 1px solid red;
+}
 </style>
